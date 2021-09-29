@@ -15,7 +15,7 @@ class StartupViewModel extends BaseViewModel {
     );
   }
 
-  void navigateToCounter() {
+  Future<void> navigateToCounter() async {
     _log.i('Navigate to CounterView');
     _navigationService.navigateTo(Routes.counterView);
   }
