@@ -11,7 +11,7 @@ class CounterView extends StatelessWidget {
     return ViewModelBuilder<CounterViewModel>.reactive(
       builder: (context, model, child) => Scaffold(
         appBar: AppBar(
-          title: Text(model.title),
+          title: const Text('Flutter Demo Page'),
         ),
         body: Center(
           child: Column(
@@ -33,7 +33,6 @@ class CounterView extends StatelessWidget {
           child: const Icon(Icons.add),
         ),
       ),
-      onModelReady: (model) => model.initialise(),
       viewModelBuilder: () => CounterViewModel(),
     );
   }
