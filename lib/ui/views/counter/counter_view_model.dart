@@ -6,7 +6,7 @@ class CounterViewModel extends BaseViewModel {
 
   final int initialValue;
   CounterViewModel({
-    this.initialValue = 5,
+    this.initialValue = 0,
   }) : _counter = initialValue;
 
   int _counter;
