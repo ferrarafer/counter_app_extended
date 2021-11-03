@@ -22,7 +22,7 @@ void main() {
       test(
           'When called 3 times and initialValue is 5, should increment counter value to 8',
           () async {
-        final model = CounterViewModel();
+        final model = CounterViewModel(initialValue: 5);
 
         model.increment();
         model.increment();
